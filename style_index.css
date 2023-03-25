@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Jost:wght@300&family=Lato:wght@700&family=Lobster&display=swap');
+
+/*#FFE4C4*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1b2029;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 122, 126);
+}
+
+body {
+    padding: 0px;
+    margin: auto;
+    background-color: rgb(22, 20, 20);
+    z-index: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden; 
+}
+
+* {
+    font-family: Jost, sans-serif;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: #1b2029;
+    z-index: 2;
+    box-shadow: 0 0 15px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    margin-left: 30px;
+}
+
+#search-header {
+    align-items: center;
+    background-color: transparent;
+    border: 1.5px solid bisque;
+    border-radius: 20px;
+    width: 350px;
+    height: 30px;
+    padding-left: 15px; 
+    outline: none;
+    color: bisque;
+    font-size: 15px;
+}
+
+.config-header {
+    background: transparent;
+    border: none;
+    margin-right: 30px;
+}
+
+.config-open {
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+.div-principal {
+    margin-top: 180px;
+    width: 1000px;
+    height: 2000px;
+    background-color: #1b2029;
+    z-index: 1;
+    border-radius: 15px;
+    max-width: 1000px;
+}
+
+.logo {
+    height: 150px;
+    width: 1000px;
+    background-color: #1b2029;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, transparent, bisque, transparent);
+    border-image-slice: 1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    font-size: 50px;
+    font-family: Bungee shade, sans-serif;
+}
+
+#jogos {   
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.jogo-index {
+    width: 180px;
+    height: 230px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+#add-jogo {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: none;
+    width: 180px;
+    height: 230px;
+    margin-top: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 25px;
+    bottom: 0px;
+    width: 1000px;
+    height: 150px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: bisque;
+}
+
+.popup {
+    position: absolute;
+    right: 25px;
+    top: 90px;
+    border-radius: 5px;
+    height: 400px;
+    width: 275px;
+    transition: all .5s;
+    transform: scale(1);
+    opacity: 0;
+    border: none;   
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1b2029;
+}
+
+.popup.opened {
+    z-index: 999;
+    opacity: 1;
+}
+
+.popup hr {
+    width: 250px;
+    border: 1px solid #1b2029;
+}

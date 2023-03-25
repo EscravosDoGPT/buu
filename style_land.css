@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=DotGothic16&family=Jost:wght@300&family=Lato:wght@700&family=Lobster&family=Rubik+Iso&display=swap');
+
+body {
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    font-family: Jost, sans-serif;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.infos-landing {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    background-image: linear-gradient(to right,  #1b2029 55%, transparent);   
+    left: 0px;
+    top: 0px;
+    z-index: 9;
+}
+
+.img-landing {
+    position: absolute;
+    justify-content: right;
+    height: 100%;
+    width: 60%;
+    top: 0px;
+    right: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-landing img {
+    filter: brightness(45%);
+}
+
+.nome-site-landing {
+    margin-left: 60px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    width: 550px;
+    font-family: Bungee shade, sans-serif;
+    color: bisque;
+    font-size: 50px;
+    gap: 40px;
+    line-height: 90px;
+}
+
+.nome-site-landing img{
+    animation: jumping 3s linear infinite;
+}
+
+@keyframes jumping {
+    from {transform: translateY(-7px);}
+    50% {transform: translateY(0);}
+    to {transform: translateY(-7px);}
+}
+
+.login-landing {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+    width: 500px;
+    height: 250px;
+    align-items: center;
+    gap: 15px;
+    color: bisque;
+}
+
+.email-landing input, .senha-landing input{
+   height: 35px;
+   width: 260px;
+   outline: none;
+   border: 1.5px solid bisque;
+   background-color: transparent;
+   border-radius: 5px;
+   font-size: 15px;
+   color: bisque;
+   padding-left: 10px;
+}
+
+.login-landing button {
+    margin-top: 10px;
+    height: 30px;
+    width: 110px;
+    border: none;
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.criar-conta {
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 300;
+    color: bisque;
+    text-decoration: none;
+}
+
+.info-jogo-landing {
+    position: absolute;
+    flex-direction: column;
+    text-align: right;
+    right: 10px;
+    bottom: 100px;
+    display: flex;
+    gap: 20px;
+    color: bisque;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.info-jogo-landing label {
+    padding: 5px;
+    border-right: 5px solid bisque;
+}
+
+
+

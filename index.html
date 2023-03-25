@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AVALIE SEUS JOGOS NA BUU! </title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+
+    <header id="header-index">
+
+        <div class="logo-header">
+            <img src="img/ghost_site.png" height="50px">
+        </div>
+
+        <input type="text" placeholder="BUSCAR"  id="search-header" src="img/lupa.png">
+
+        <button class="config-header" type="submit" onclick="abrirConfig(true)">
+            <img  src="img/config.png">
+        </button>
+
+        <div class="popup" id="popup">
+            nome
+            <div>
+
+            </div>
+
+            <hr>
+            1 2 3 4
+            <hr>
+            SAIR
+        </div>
+    </header>
+
+    
+    <main class="div-principal">
+        <div class="logo"> BUU! REVIEWS </div>      
+        
+        <div id="jogos">
+            <button id="add-jogo"> 
+                <img src="img/mas_a.png"    
+            </button>
+        </div>  
+
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script>
+        const addjogo = document.getElementById("add-jogo");
+        const divjogo = document.getElementById("jogos");
+  
+        addjogo.addEventListener("click", () => {
+          const newDiv = document.createElement("div");
+          newDiv.className = "jogo-index";
+          newDiv.innerHTML = `
+            <input type="text" placeholder="Input 1">
+            <input type="text" placeholder="Input 2">
+            <input type="text" placeholder="Input 3">
+          `;
+          divjogo.appendChild(newDiv);
+        });
+
+        const popup = document.getElementById('popup');
+        
+        function abrirConfig(open) {
+            popup.classList[open ? 'add' : 'remove']('opened');
+        }
+    </script>
+    
+</body>
+</html>
