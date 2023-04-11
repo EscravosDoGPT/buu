@@ -1,4 +1,4 @@
-# Buu!
+# Buu Reviews
 ## Versão: 1.0 
 ## Status do Projeto: ⚠️ Espera
 
@@ -35,7 +35,7 @@
 Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Descrição do projeto
-Descrição breve do projeto compondo um paragrafo ou dois.
+Buu é um site de avaliação de jogos, onde os usuários podem acessa-lo para ver as notas de avaliação de um jogo de seu interesse.
 
 ## Funcionalidades ⚙️
 ✔️ Funcionalidade 1
