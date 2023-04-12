@@ -52,7 +52,7 @@ Nenhuma funcionalidade foi implementada no projeto no momento.
 ## Desenvolvedores/Contribuintes:
 [ ArthurBechir ](https://github.com/ArthurBechir)
 
-[ santn ] (https://github.com/santn11)
+[ santn11 ](https://github.com/santn11)
 
 [ massayukiotaki ](https://github.com/massayukiotaki)
 
