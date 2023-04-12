@@ -1,92 +1,64 @@
 # Buu Reviews
 ## Versão: 1.0 
-## Status do Projeto: ⚠️ Espera
-
-## Tópicos
-🔹 Descrição do projeto 
- 
-🔹 Funcionalidades
-
-🔹 Distribuição
-
-🔹 Pré-requisitos
-
-🔹 Como rodar a aplicação
-
-🔹 Testes realizados
-
-🔹 Banco de Dados
-
-🔹 Linguagens, dependências e libs utilizadas
-
-🔹 Novas Recursos
-
-🔹 Resolvendo problemas
-
-🔹 Recursos inseridos 
-
-🔹 Desenvolvedores/Contribuintes
-
-🔹 Informações Extras
-
-
-...
-
-Insira os tópicos do README em links para facilitar a navegação do leitor
+## Status do Projeto: 🛠 Em Desenvolvimento
 
 ## Descrição do projeto
-Buu é um site de avaliação de jogos, onde os usuários podem acessa-lo para ver as notas de avaliação de um jogo de seu interesse.
+Buu é um site de avaliação de jogos, onde os usuários podem acessa-lo para ver as notas de avaliação de um jogo de seu interesse e avaliadores podem acessa-lo para dar notas para jogos.
+
 
 ## Funcionalidades ⚙️
-✔️ Funcionalidade 1
+✔️ Funcionalidade 1: Cadastrar-se no site.
 
-✔️ Funcionalidade 2
+✔️ Funcionalidade 2: Logar no site.
 
-✔️ Funcionalidade 3
-
-✔️ Funcionalidade 4
+✔️ Funcionalidade 3: Cadastrar Filme para avaliação (Moderador)
 
 ## Distribuição
-Link para teste da versão disponibilizada.
+No momento não está disponível nenhuma versão  para testes
 
 ## Pré-requisitos ⚠️    
-Windows 10; 
-Visual Studio Code; 
-Aparelho utilizado para testes: Notebook Samsung X55
-- Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação, para rodar o projeto.
+Windows 10 ou 11; 
+ 
+Aparelho utilizado para testes: Notebook Samsung X55 Windows 11 e Desktop Windows 10.
+
+Navegador de internet.
 
 ## Como rodar a aplicação 
-Explicação de como se deve utilizar o projeto.
+1 - Baixe o projeto no [repositório](https://github.com/EscravosDoGPT/buu) github.
+
+2 - Na versão atual as 3 telas feitas até o momento não podem ser acessadas de outra forma que não seja abrindo o arquivo .html
+
+3 - Abra index.html para abrir a página principal, cadastro.html para abrir a página de cadastro ou landing.html para abrir a página inicial.
 
 ## Testes realizados
-Utilização de imagens e descrição do qeu foi testado.
+Todos os testes foram realizados em náquinas com Windows 10 e 11. Diferentes sistemas operacionais podem causar possíveis falhas.
 
 ## Banco de Dados 🗂️
-Caso tenha acesso a uma base de dados, deixe a descrição do arquivo (json, csv, xml e etc).
+A aplicação usa a ferramenta de banco de dados MySQL, que na atual versão não está sendo utilizada. 
 
 ## Linguagens, dependencias e libs utilizadas 📚
-![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+[ JavaScript ](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-XML
-...
-Liste as tecnologias utilizadas no projeto que não forem reconhecidas pelo Github
+[ Bootstrap ](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
-## Resolvendo Problemas 
-Em issues foram abertos alguns problemas gerados durante o desenvolvimento desse projeto e como foram resolvidos.
+[ HTML ](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+
+[ CSS ](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## Recursos de inseridos 🧰
-Se for o caso, liste tarefas/funcionalidades que ainda precisam ser implementadas na sua aplicação, insira fotos da tela do app.
 
-📝 Tarefa 1
-
-📝 Tarefa 2
-
-📝 Tarefa 3
+Nenhuma funcionalidade foi implementada no projeto no momento.
 
 ## Desenvolvedores/Contribuintes:
-Liste o time responsável pelo desenvolvimento do projeto
+[ ArthurBechir ](https://github.com/ArthurBechir)
+
+[ santn11 ] (https://github.com/santn11)
+
+[ massayukiotaki ](https://github.com/massayukiotaki)
+
+[ devgabrielmendes ](https://github.com/devgabrielmendes)
 
 ## Licença
 The MIT License (MIT)
 
-## Copyright ©️ Ano - Titulo do Projeto
+## Copyright Escravos do GPT©️ 2023 - Buu Reviews
