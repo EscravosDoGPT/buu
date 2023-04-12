@@ -50,9 +50,9 @@ Buu é um site de avaliação de jogos, onde os usuários podem acessa-lo para v
 Link para teste da versão disponibilizada.
 
 ## Pré-requisitos ⚠️    
-Versão do Android; 
-SDK; 
-Aparelho utilizado para testes.
+Windows 10; 
+Visual Studio Code; 
+Aparelho utilizado para testes: Notebook Samsung X55
 - Liste todas as dependencias e libs que o usuário deve ter instalado na máquina antes de rodar a aplicação, para rodar o projeto.
 
 ## Como rodar a aplicação 
