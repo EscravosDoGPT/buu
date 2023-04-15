@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Avalie jogos na BUU! </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style_index_mod.css">
+</head>
+<body>
+    <div class="modal-container2">
+        <div class="jogo" id="jogo">
+            <img src="img/ghost_site.png" height="15%">
+            
+            <input type="text"   placeholder="Nome"      id="nome-add-jogo"   maxlength="40">
+            <input type="text"   placeholder="Gênero"    id="genero-add-jogo" maxlength="20">
+            <input type="text"   placeholder="Sinopse"   id="desc-add-jogo"   maxlength="350">
+            <div   id="nota-add-jogo">
+                <input type="number" placeholder="Nota">
+                %
+            </div>
+
+            <label for='carregar'> Carregar imagem </label>
+            <input id='carregar' type='file'>
+          
+            <button id="add-jogo"> ADD </button>
+        </div>
+    </div>  
+    
+    <header id="header-index">
+
+        <div class="logo-header">
+            <img src="img/ghost_site.png" height="50px">
+        </div>
+
+        <div class="input-header">
+            <input class="search-txt" type="text" name="" placeholder="Buscar" id="search-header" maxlength="35">
+            <a class="search-btn" !href="=">
+                <i class="bi bi-search"></i>
+            </a>
+        </div>
+
+        <i class="open-modal-button">
+            <img  src="img/config.png">
+        </i>
+
+        <div class="modal-container">
+            <div class="modal" id="modal">
+                <label> MODERADOR </label>
+                <label> NOME      </label>
+                
+                <div class="perfil">
+
+                </div>
+
+                <hr>
+
+                <div class="opcoes">
+                    <button> SAIR </button>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <main class="div-principal">
+        <div class="logo"> BUU! REVIEWS </div>      
+        
+        <section id="lista-jogo">
+            <button class="abrir-add" onclick="abrirJogo(true)"> 
+                <img src="img/mas_a.png">
+            </button>
+        </section>        
+    </main>
+
+    <footer>
+        OBRIGADO PELA SUA AVALIAÇÃO!
+    </footer>
+
+    <script src="script_index_mod.js"> </script>
+</body>
+</html>

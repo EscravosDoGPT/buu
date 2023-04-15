@@ -1,39 +1,54 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JUNTE-SE A NÓS </title>
+    <title> Junte-se a nós </title>
     <link rel="stylesheet" href="style_cad.css">
 </head>
 <body>
+    <img src="img/ghost_site.png" width="50px" class="img-logo-landing">
+    <img src="img/img2-cad.png" class="img2-cad" height="300px">
+    <div class="circle"> </div>
+
     <main class="info_cad">
-        <img src="img/ghost_site.png" width="50px" class="img-logo-landing">
         <section class="img_cad">
-            <label class="frase-cad">
-                JUNTE-SE A NOS <br> <span class="title-cad"> E AVALIE SEUS JOGOS PREFERIDOS! </span>         
-            </label>
+            JUNTE-SE A NOS <br> <span class="title-cad"> E ACHE SEUS PRÓXIMOS JOGOS </span>        
             <div class="img-ghost">
-                <img src="img/img-cad.png" height="400px" alt="buu!">
+                <img src="img/img-cad.png" height="400px" alt="buu!" id="img-ghost">
             </div>
         </section>
         <section class="campos-cad">
             <label> CADASTRO </label>
-                <div class="input-cad">
-                    <input type="text" placeholder="USUARIO" id="nome-input">
-                    <input type="text" placeholder="EMAIL" id="email-input">
-                    <input type="password" placeholder="SENHA" id="senha-input">              
-                    <input type="password" placeholder="CONFIRMAR SENHA" id="confirm-senha-input">           
-                    <input type="date" id="nasc-input">
+            <div class="input-cad">
+                <div id="nome-input">
+                    <input type="text" placeholder="Usuario" maxlength="15">
                 </div>
-            <button type="submit"> ENTRAR </button>    
+                <div id="email-input">
+                    <input type="text" placeholder="Email" maxlength="35">
+                </div>
+                <div  id="senha-input">
+                    <input type="password" placeholder="Senha" id="senha" maxlength="15">  
+                    <button class="ver-senha" type="submit" onclick="mostrarsenha1()">
+                        <img src="img/eye.png">
+                    </button>
+                </div> 
+                <div id="confirm-senha-input">        
+                    <input type="password" placeholder="Confirmar senha" id="confirm-senha" maxlength="15"> 
+                    <button class="ver-senha-confirm" type="submit" onclick="mostrarsenha2()">
+                        <img src="img/eye.png">
+                    </button>
+                </div>  
+                <div id="nasc-input">        
+                    <input type="date">
+                </div>
+                
+            </div>
+            <button type="submit" class="entrar"> ENTRAR </button>    
         </section>
-        <div class="circle">
-
-        </div>
-        <img src="img/img2-cad.png" class="img2-cad" height="300px">
-
     </main>
+
+    <script src="script_cad.js"></script>
 </body>
 </html>

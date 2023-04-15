@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Jost:wght@300&family=Lato:wght@700&family=Lobster&display=swap');
 
 /*#FFE4C4*/
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: #1b2029;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 122, 126);
+    background-color: bisque;
 }
 
 body {
     padding: 0px;
     margin: auto;
-    background-color: rgb(22, 20, 20);
+    background-color: #1b2029;
     z-index: 0;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     overflow-x: hidden; 
 }
 
@@ -42,7 +40,7 @@ header {
     top: 0;
     width: 100%;
     height: 75px;
-    background-color: #1b2029;
+    background-color: rgb(0, 122, 126);
     z-index: 2;
     box-shadow: 0 0 15px black;
     display: flex;
@@ -103,6 +101,12 @@ header {
     background: bisque;
 }
 
+.config-header {
+    background: transparent;
+    border: none;
+    margin-right: 30px;
+}
+
 .open-modal-button {
     background: transparent;
     border: none;
@@ -129,84 +133,95 @@ header {
     background: rgba(50, 50, 50, 0.45);
     backdrop-filter: blur(10px);
 }
-
+  
 .modal-show, .modal-show2 {
     opacity: 1;
     pointer-events: auto;
 }
 
-.jogo, .modal {
-    opacity: 0;
-}
-
 .modal-show2 > .jogo{
     border-radius: 5px;
-    height: 85%;
-    width: 70%;
+    height: 75%;
+    width: 33%;
+    transition: all .5s;
     transform: scale(1);
-    opacity: 0;
-    background-color: #1b2029;
-    margin: auto;
+    background-image: linear-gradient(to bottom, rgb(0, 122, 126), #1b2029);
     display: flex;
+    flex-direction: column;
+    gap: 4%;
     align-items: center;
     justify-content: center;
     opacity: 1;
+} 
+
+#nome-add-jogo, #genero-add-jogo, #desc-add-jogo, #nota-add-jogo {
+    font-size: 18px;
+    width: 60%;
+    outline: none;
+    border: none;
+    border-left: 5px solid bisque;
+    border-bottom: 1.5px solid;
+    border-image: linear-gradient(to right, bisque, transparent);
+    border-image-slice: 1;
+    color: bisque;
+    padding-left: 5px;
+    background-color: transparent;
 }
 
-.img-jogo {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.circle {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: rgb(0, 122, 126);
-    top: -20%;
-    right: -10%;
-}
-
-.info-jogo {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.jogo input::placeholder {
+    font-size: 15px;
     color: bisque;
 }
 
-.nome-jogo {
-    font-size: 40px;
-    font-weight: bolder;
-}
-
-.desc {
-    width: 80%;
-    margin-top: 40px;
-    word-wrap: break-word;
-}
-
-.notas {
+#nota-add-jogo {
+    width: 15%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 10%;
-    width: 80%;
-    margin-top: 40px;
-    font-size: 25px;
+    justify-content: space-between;
 }
 
-.notas label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+#nota-add-jogo input {
+    width: 50%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    color: bisque;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+input[type='file'] {
+    display: none
+}
+
+.jogo label {
+    height: 5%;
+    width: 30%;
+    background-color: transparent;
+    border: 1.5px solid bisque;
+    border-left: 5px solid bisque;
+    color: bisque;
+    padding: 5px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#add-jogo {
+    margin-top: 20px;
+    height: 7%;
+    width: 20%;
+    border: none;
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.jogo, .modal {
+    opacity: 0;
 }
 
 .modal-show > .modal {
@@ -216,11 +231,12 @@ header {
     border-radius: 5px;
     height: 400px;
     width: 20%;
+    transition: all .5s;
     transform: scale(1);
     opacity: 0;  
-    box-shadow: 0 0 15px black;
-    background-color: rgb(0, 122, 126);
-    display: flex;  
+    box-shadow: 0 0 10px black; 
+    background-color: #1b2029;
+    display: flex;
     flex-direction: column;
     align-items: center;
     color: bisque;
@@ -230,7 +246,7 @@ header {
 
 .modal hr {
     width: 90%;
-    border: 1px solid #1b2029;
+    border: 1px solid bisque;
     margin-block: 25px;
 }
 
@@ -242,7 +258,7 @@ header {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: #1b2029;
+    background-color: bisque;
     margin-top: 20px;
 }
 
@@ -256,16 +272,19 @@ header {
 
 #cor-um {
     background-color: bisque;
-    color: #1b2029;
+    border: 1px solid #1b2029;
+}
+
+.bisque {
+    background-color: bisque;
 }
 
 #cor-dois {
-    background-color: #1b2029;
-    color: bisque;
+    background-color: black;
 }
 
-#body {
-    background-color: rgb(20, 20, 20);
+.black {
+    background-color: rgb(22, 20, 20);
 }
 
 .opcoes {
@@ -276,7 +295,7 @@ header {
 }
 
 .opcoes button:hover {
-    transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 .opcoes button {
@@ -291,15 +310,15 @@ header {
 .div-principal {
     margin-top: 180px;
     width: 80%;
-    background-color: #1b2029;
+    background-color: rgb(0, 122, 126);
     z-index: 1;
-    border-radius: 15px;
+    border-radius: 15px; 
 }
 
 .logo {
     height: 150px;
     width: 100%;
-    background-color: #1b2029;
+    background-color: rgb(0, 122, 126);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom: 1.5px solid;
@@ -326,18 +345,23 @@ header {
 .jogo-index {
     width: 17%;
     height: 230px;
+    cursor: pointer;
     margin-top: 20px;
     border-radius: 3px;
-    background-color: bisque;
     border: none;
 }
 
-.abrir-jogo {
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
+.abrir-add {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     border: none;
-    border-radius: 2px;
+    width: 17%;
+    height: 230px;
+    margin-top: 20px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -347,27 +371,9 @@ footer {
     height: 150px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    background-color: rgb(0, 122, 126);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: bisque;
-}
-
-footer img {
-    animation: jumping 3s linear infinite;
-}
-
-@keyframes jumping {
-    from {transform: translateY(-5px);}
-    50% {transform: translateY(0);}
-    to {transform: translateY(-5px);}
-}
-
-footer label {
-    width: 25%;
+    background-color: bisque;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
 

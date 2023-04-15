@@ -41,15 +41,16 @@ button {
 }
 
 .img-landing img {
-    filter: brightness(45%);
+    filter: brightness(40%);
 }
 
 .nome-site-landing {
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 80px;
     display: flex;
     align-items: center;
-    width: 550px;
+    justify-content: center;
+    width: 50%;
     font-family: Bungee shade, sans-serif;
     color: bisque;
     font-size: 50px;
@@ -59,6 +60,7 @@ button {
 
 .nome-site-landing img{
     animation: jumping 3s linear infinite;
+    margin-left: 20px;
 }
 
 @keyframes jumping {
@@ -71,31 +73,57 @@ button {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 40px;
-    width: 500px;
+    width: 50%;
     height: 250px;
     align-items: center;
     gap: 15px;
     color: bisque;
 }
 
-.email-landing input, .senha-landing input{
+.email-landing, .senha-landing {
    height: 35px;
-   width: 260px;
+   width: 40%;
    outline: none;
    border: 1.5px solid bisque;
    background-color: transparent;
    border-radius: 5px;
-   font-size: 15px;
-   color: bisque;
-   padding-left: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.login-landing button {
+.email-landing input {
+    width: 90%;
+}
+
+.email-landing input, .senha-landing input {
+    background-color: transparent;
+    font-size: 15px;
+    color: bisque;
+    padding: 0px 10px;
+    height: 90%;
+    border: none;
+    outline: none;
+}
+
+.senha-landing button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.entrar {
     margin-top: 10px;
     height: 30px;
-    width: 110px;
+    width: 18%;
     border: none;
     background-color: bisque;
     border-radius: 5px;
@@ -117,8 +145,8 @@ button {
     position: absolute;
     flex-direction: column;
     text-align: right;
-    right: 10px;
-    bottom: 100px;
+    right: 1%;
+    bottom: 20%;
     display: flex;
     gap: 20px;
     color: bisque;
