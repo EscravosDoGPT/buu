@@ -1,17 +1,4 @@
-/*add jogo
-const addjogo = document.getElementById("add-jogo");
-const divjogo = document.getElementById("jogos");
-  
-addjogo.addEventListener("click", () => {
-    const newDiv = document.createElement("Div");
-    newDiv.className = "jogo-index";
-    newDiv.innerHTML = `
-        <button class="btn-jogo" type="submit" onclick="abrirJogo(true)"> </button>
-    `;     
-    divjogo.appendChild(newDiv);
-    });*/
-
-/*abrir/fechar popup*/
+/*abrir/fechar config*/
 const getElement = (...queries) => document.querySelector(...queries);
 
 const button = getElement('.open-modal-button');
@@ -29,6 +16,7 @@ const closeModal = () => container.classList.remove(activeModalClass);
             closeModal();
         });
 
+/*abrir/fechar jogo*/
 const getElement2 = (...queries) => document.querySelector(...queries);
 
 const button2 = getElement('.jogo-index');
@@ -40,18 +28,11 @@ const activeModalClass2 = 'modal-show2';
 const openModal2 = () => container2.classList.add(activeModalClass2);
 const closeModal2 = () => container2.classList.remove(activeModalClass2);
         
-        button2.addEventListener('click', openModal2);
-        container2.addEventListener('click', (event) => {
-            if (modal2.contains(event.target)) return;
-                closeModal2();
-            });
-        
-/*abrir jogo*/
-const infoJogo = document.getElementById('jogo')
-        
-    function abrirJogo(open) {
-        infoJogo.classList[open ? 'add' : 'remove']('opened')
-    }
+    button2.addEventListener('click', openModal2);
+    container2.addEventListener('click', (event) => {
+        if (modal2.contains(event.target)) return;
+            closeModal2();
+        });
 
 /*mudar cor do site*/
 document.getElementById("cor-um").

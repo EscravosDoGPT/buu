@@ -41,7 +41,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 35%;
-    height: 450px;
+    height: 55%;
     text-align: left;
     font-size: 40px;
     font-weight: bolder;
@@ -52,7 +52,7 @@ button {
     display: flex;
     flex-direction: column;
     width: 35%;
-    height: 450px;
+    height: 58%;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
@@ -172,4 +172,77 @@ input::-webkit-calendar-picker-indicator{
 
 input[type="date"]::-webkit-input-placeholder{ 
     visibility: hidden !important;
+}
+
+/* Respposividade */
+
+@media screen and (min-width: 1700px) /* TELA FULL HD */{
+    .img_cad{
+        height: 65%;
+        font-size: 60px;
+    }
+
+    .campos-cad {
+        width: 34.8%;
+        height: 70%;
+        gap: 15px;
+        border-radius: 15px;
+    }
+    
+    .title-cad {
+        font-size: 37px;
+    }
+    
+    .campos-cad {
+        gap: 40px;
+        margin-top: 20px;
+    }
+
+    .campos-cad label{
+        margin-top: 28px;
+        font-size: 40px;
+    }
+
+    .entrar {
+        margin-top: 10px;
+        height: 50px;
+        width: 26%;
+        border-radius: 7px;
+        font-size: 22px;
+    }
+
+    .input-cad {
+        gap: 27px;
+        margin-top: 10px;
+    }
+
+    .input-cad div {
+        padding: 0px 10px;
+        height: 52px;
+        border-radius: 8px;
+        border: 2px solid bisque;
+    }
+    
+    .input-cad input {
+        width: 100%;
+        font-size: 20px;   
+    }
+
+    .circle {
+        width: 39.5%;
+        height: 78%;
+    }
+
+    #nasc-input {
+        width: 23%;
+        border-bottom: 2px solid bisque;
+    }
+
+    .img-ghost {
+        width: 115%;
+    }
+
+    .img2-cad {
+       width: 23.7%;
+    }
 }

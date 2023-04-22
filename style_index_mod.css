@@ -39,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 75px;
+    height: 12%;
     background-color: rgb(0, 122, 126);
     z-index: 2;
     box-shadow: 0 0 15px black;
@@ -50,26 +50,30 @@ header {
 
 .logo-header {
     margin-left: 30px;
+    width: 5%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
 }
 
 .input-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: bisque;
-    height: 30px;
+    height: 40%;
+    min-width: 2%;
     border-radius: 40px;
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-btn{
     color: #1b2029;
     float: right;
-    width: 30px;
-    height: 30px;
+    width: 5%;
+    height: 90%;
     border-radius: 50%;
     background: bisque;
     display: flex;
@@ -101,13 +105,12 @@ header {
     background: bisque;
 }
 
-.config-header {
-    background: transparent;
-    border: none;
-    margin-right: 30px;
-}
-
 .open-modal-button {
+    width: 5%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: transparent;
     border: none;
     margin-right: 30px;
@@ -194,7 +197,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 input[type='file'] {
-    display: none
+    display: none;
 }
 
 .jogo label {
@@ -229,7 +232,7 @@ input[type='file'] {
     right: 25px;
     top: 90px;
     border-radius: 5px;
-    height: 400px;
+    height: 65%;
     width: 20%;
     transition: all .5s;
     transform: scale(1);
@@ -252,6 +255,7 @@ input[type='file'] {
 
 .modal label {
     margin-top: 35px;
+    font-size: 20px;
 }
 
 .perfil {
@@ -292,6 +296,7 @@ input[type='file'] {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    height: 10%;
 }
 
 .opcoes button:hover {
@@ -300,15 +305,19 @@ input[type='file'] {
 
 .opcoes button {
     width: 25%;
+    height: 60%;
     border: 1.5px solid bisque;
     color: bisque;
     background-color: transparent;
     border-radius: 15px;
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div-principal {
-    margin-top: 180px;
+    margin-top: 13%;
     width: 80%;
     background-color: rgb(0, 122, 126);
     z-index: 1;
@@ -365,15 +374,153 @@ input[type='file'] {
 }
 
 footer {
-    margin-top: 25px;
+    margin-top: 4%;
     bottom: 0px;
     width: 90%;
-    height: 150px;
+    height: 130px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 17px;
 }
 
+/*responsividade*/
+
+@media screen and (min-width: 1900px){
+    header {
+        box-shadow: 0 0 25px black;
+    }
+    
+    .input-header:hover > .search-txt{
+        width: 480px;
+        padding-left: 20px;
+    } 
+
+    .input-header {
+        height: 40%;
+        min-width: 2%;
+        border-radius: 60px;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .search-txt {
+        color: #1b2029;
+        font-size: 32px;
+        font-weight: 800;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+    }
+
+    .modal-show2 > .jogo{
+        border-radius: 15px;
+    } 
+
+    #nome-add-jogo, #genero-add-jogo, #desc-add-jogo, #nota-add-jogo {
+        font-size: 30px;
+        border-left: 10px solid bisque;
+        padding-left: 15px;
+    }
+    
+    .jogo input::placeholder {
+        font-size: 30px;
+    }
+    
+    #nota-add-jogo input {
+        font-size: 30px;
+    }
+
+    .jogo label {
+        border-left: 10px solid bisque;
+        padding: 10px 10px;
+        font-size: 30px;
+    }
+
+    #add-jogo {
+        margin-top: 40px;
+        height: 7%;
+        width: 20%;
+        border-radius: 15px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .div-principal {
+        border-radius: 22.5px; 
+    }
+
+    .logo {
+        height: 255px;
+        border-top-right-radius: 22.5px;
+        border-top-left-radius: 22.5px;
+        font-size: 100px;
+    }
+
+    #lista-jogo {   
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        padding-bottom: 25px;
+        flex-wrap: wrap;
+    }
+
+    .jogo-index {
+        height: 465px;
+        margin-top: 30px;
+        border-radius: 6px;
+    }
+
+    .abrir-add {
+        width: 17%;
+        height: 465px;
+        margin-top: 30px;
+        border-radius: 6px;
+    }
+    
+    .modal-show > .modal {
+        right: 45px;
+        top: 185px;
+        border-radius: 15px;
+    }
+    
+    .modal hr {
+        margin-top: 45px;
+    }
+    
+    .modal label {
+        margin-top: 60px;
+        font-size: 35px;
+    }
+    
+    .perfil {
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+        background-color: bisque;
+        margin-top: 40px;
+    }
+    
+    .opcoes button:hover {
+       transform: scale(1.2);
+    }
+    
+    .opcoes button {
+        border-radius: 45px;
+        font-size: 25px;
+        height: 65%;
+    }
+
+    footer {
+        height: 260px;
+        font-size: 35px;
+        border-top-right-radius: 22.5px;
+        border-top-left-radius: 22.5px;
+    }
+
+}
